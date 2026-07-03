@@ -1,0 +1,121 @@
+.admin-page {
+  min-height: 100vh;
+  padding: 50px 6%;
+  background: linear-gradient(135deg, #eef6ff, #ffffff);
+  color: #071f60;
+}
+
+.admin-login-card {
+  width: min(100%, 430px);
+  margin: 80px auto;
+  padding: 34px;
+  border-radius: 28px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(13, 74, 150, 0.14);
+}
+
+.admin-login-card h1 {
+  margin-bottom: 8px;
+  font-size: 2rem;
+}
+
+.admin-login-card p {
+  margin-bottom: 24px;
+  color: #42526b;
+}
+
+.admin-login-card form {
+  display: grid;
+  gap: 16px;
+}
+
+.admin-login-card input {
+  padding: 15px 16px;
+  border: 1px solid #d8e5f5;
+  border-radius: 15px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.admin-login-card input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+}
+
+.admin-login-card button,
+.admin-header button {
+  border: none;
+  border-radius: 999px;
+  padding: 13px 22px;
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.admin-error {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #fff0f0;
+  color: #b42318;
+  font-weight: 700;
+}
+
+.admin-dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.admin-header h1 {
+  margin-bottom: 6px;
+}
+
+.admin-table-wrapper {
+  overflow-x: auto;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(13, 74, 150, 0.12);
+}
+
+.admin-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 950px;
+}
+
+.admin-table-wrapper th,
+.admin-table-wrapper td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e7eef8;
+  font-size: 0.92rem;
+}
+
+.admin-table-wrapper th {
+  background: #f3f8ff;
+  color: #071f60;
+}
+
+.admin-table-wrapper td {
+  color: #263750;
+}
+
+@media (max-width: 700px) {
+  .admin-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-login-card {
+    margin: 40px auto;
+    padding: 24px;
+  }
+}

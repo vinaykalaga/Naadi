@@ -17,7 +17,9 @@ function HeroContent({ compact = false }) {
         <strong> artist in every child.</strong>
       </p>
       <button className="primary-btn" type="button" onClick={scrollToDemo}>
-        Book Your Demo Class <span aria-hidden="true">🖌️</span>
+        <a href="#book-demo" className="primary-btn">
+          Book Your Demo Class 🎨
+        </a> <span aria-hidden="true">🖌️</span>
       </button>
       <small>Let&apos;s create something beautiful together!</small>
     </div>
