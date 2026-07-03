@@ -30,4 +30,5 @@ export async function getApprovedActivityGallery() {
   }
 
   return response.json();
+
 }
