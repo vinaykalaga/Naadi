@@ -1,11 +1,11 @@
-import gallery1 from '../assets/gallery/gallery-1.png';
-import gallery2 from '../assets/gallery/gallery-2.png';
-import gallery3 from '../assets/gallery/gallery-3.png';
-import gallery4 from '../assets/gallery/gallery-4.png';
-import gallery5 from '../assets/gallery/gallery-5.png';
-import gallery6 from '../assets/gallery/gallery-6.png';
-import gallery7 from '../assets/gallery/gallery-7.png';
-import gallery8 from '../assets/gallery/gallery-8.png';
+import gallery1 from "../assets/gallery/gallery-1.png";
+import gallery2 from "../assets/gallery/gallery-2.png";
+import gallery3 from "../assets/gallery/gallery-3.png";
+import gallery4 from "../assets/gallery/gallery-4.png";
+import gallery5 from "../assets/gallery/gallery-5.png";
+import gallery6 from "../assets/gallery/gallery-6.png";
+import gallery7 from "../assets/gallery/gallery-7.png";
+import gallery8 from "../assets/gallery/gallery-8.png";
 
 export const navLinks = [
   { label: 'Home', target: 'home' },
@@ -29,14 +29,46 @@ export const quickMenu = [
 ];
 
 export const galleryItems = [
-  { title: 'Autumn tree painting', src: gallery1 },
-  { title: 'Sunset painting', src: gallery2 },
-  { title: 'Pencil portrait sketch', src: gallery3 },
-  { title: 'Colorful bird artwork', src: gallery4 },
-  { title: 'Owl painting', src: gallery5 },
-  { title: 'Flower painting', src: gallery6 },
-  { title: 'Still life sketch', src: gallery7 },
-  { title: 'Night sky painting', src: gallery8 }
+  {
+    id: 1,
+    title: "Autumn tree painting",
+    image: gallery1
+  },
+  {
+    id: 2,
+    title: "Sunset painting",
+    image: gallery2
+  },
+  {
+    id: 3,
+    title: "Pencil portrait sketch",
+    image: gallery3
+  },
+  {
+    id: 4,
+    title: "Colorful bird artwork",
+    image: gallery4
+  },
+  {
+    id: 5,
+    title: "Owl painting",
+    image: gallery5
+  },
+  {
+    id: 6,
+    title: "Flower painting",
+    image: gallery6
+  },
+  {
+    id: 7,
+    title: "Still life sketch",
+    image: gallery7
+  },
+  {
+    id: 8,
+    title: "Night sky painting",
+    image: gallery8
+  }
 ];
 
 export const whyChoose = [

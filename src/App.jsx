@@ -13,11 +13,14 @@ import Footer from "./components/Footer.jsx";
 import FloatingDecorations from "./components/FloatingDecorations.jsx";
 import DemoBookingForm from "./components/DemoBookingForm.jsx";
 import AdminPage from "./components/AdminPage.jsx";
+import ActivityDrawingModal from "./components/ActivityDrawingModal.jsx";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
 
   const isAdminPage = window.location.pathname === "/admin";
+
+  const [showActivityModal, setShowActivityModal] = useState(false);
 
   useEffect(() => {
     if (isAdminPage) {
@@ -78,6 +81,21 @@ function App() {
 
         <QuickMenu />
 
+        <section className="activity-launch-section" id="activities">
+          <div className="activity-launch-card">
+            <div>
+              <h2>🎨 Fun Art Activity</h2>
+              <p>
+                Students can draw on screen and submit their artwork for admin review.
+              </p>
+            </div>
+
+            <button onClick={() => setShowActivityModal(true)}>
+              Open Activities 🖌️
+            </button>
+          </div>
+        </section>
+
         <SplitFeature
           id="classes"
           title="Live Online Classes"
@@ -104,6 +122,10 @@ function App() {
       </main>
 
       <Footer />
+
+      {showActivityModal && (
+            <ActivityDrawingModal onClose={() => setShowActivityModal(false)} />
+          )}
     </div>
   );
 }
